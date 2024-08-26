@@ -17,10 +17,7 @@ const LandingPage = () => {
         </ul>
       </nav>
       <div className="mentor-logo-wrapper">
-       <div className="mentor-text">
-          <p>WE-MEN-TOR</p>
-          <p>YOUR SUCCESS, OUR COMMITMENT</p>
-        </div>
+       
       </div>
     </div>
   );
