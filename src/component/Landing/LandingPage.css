@@ -49,7 +49,6 @@
   font-size: 18px;
   font-weight: bold;
   padding: 5px 10px;
-  background: linear-gradient(145deg, #3a3a3a, #505050); /* Creates a slight gradient for a 3D button look */
   border-radius: 8px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), 
               -3px -3px 8px rgba(255, 255, 255, 0.1); /* Inner and outer shadows for a more 3D effect */
@@ -60,7 +59,6 @@
   transform: translateY(-2px); /* Simulates a button press */
   box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.7), 
               -3px -3px 12px rgba(255, 255, 255, 0.2); /* Increased shadow on hover */
-  background: linear-gradient(145deg, #505050, #3a3a3a); /* Inverts the gradient on hover */
 }
 
 .mentor-logo-wrapper {

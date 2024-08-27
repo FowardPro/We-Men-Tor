@@ -1,0 +1,126 @@
+.login-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+  }
+ 
+  .header-text {
+    margin-left: 20px;
+    color: white;
+    text-align: left;
+  }
+  
+  .header-text h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header-text span {
+    font-size: 14px;
+  }
+  
+  .navigation {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .login-box {
+    background-color: rgba(1, 31, 71, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .login-box h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .login-box h3 {
+    margin: 10px 0;
+    font-size: 22px;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-box .forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: #66ccff;
+    text-decoration: none;
+  }
+  
+  .login-box p {
+    margin-top: 20px;
+  }
+  
+  .login-box p a {
+    color: #66ccff;
+    text-decoration: none;
+  }
+  
