@@ -51,54 +51,90 @@
   .navigation ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px; /* Adjust this to change spacing between links */
     margin: 0;
     padding: 0;
   }
   
   .navigation a {
-    color: white;
+    color: #ffffff; /* Keep the links white for good contrast */
     text-decoration: none;
     font-weight: bold;
-  }
+    font-size: 18px; /* Increase the font size for better visibility */
+}
+
+.navigation a:hover {
+    color: #66ccff; /* Add a hover effect to make it clear that the links are clickable */
+}
+
+.login-box .forgot-password, .login-box p a {
+    color: #66ccff; /* Ensure the links inside the login box are visible */
+    text-decoration: none;
+}
+
+.login-box .forgot-password:hover, .login-box p a:hover {
+    color: #ffffff; /* Add a hover effect for links inside the login box */
+}
+
+.login-box p {
+    margin-top: 20px;
+}
+
+.login-box p a {
+    color: #66ccff;
+    text-decoration: none;
+}
+
   
-  .login-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .login-box {
-    background-color: rgba(1, 31, 71, 0.8);
+.login-box {
+    background-color: rgb(0, 20, 46); /* Dark background color for depth */
     padding: 30px;
     border-radius: 10px;
-    text-align: center;
     color: white;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; /* Relative positioning for the 3D effect */
+    box-shadow: 
+      10px 10px 20px rgba(0, 0, 0, 0.7), /* Strong shadow to the bottom right */
+      -10px -10px 20px rgba(255, 255, 255, 0.2); /* Light shadow to the top left */
+    background-image: linear-gradient(145deg, rgb(10, 30, 60), rgb(0, 20, 46)); /* Subtle gradient for a polished look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .login-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 
+      15px 15px 25px rgba(0, 0, 0, 0.7), /* Enhanced shadow on hover */
+      -15px -15px 25px rgba(255, 255, 255, 0.2); /* Enhanced light shadow on hover */
   }
   
   .login-box h2 {
     margin: 0;
     font-size: 28px;
     font-weight: bold;
+    text-align: center;
   }
   
   .login-box h3 {
     margin: 10px 0;
     font-size: 22px;
+    text-align: center;
   }
   
   .login-box input {
-    width: 100%;
+    width: 90%; /* Adjusted to make the inputs fit better within the box */
+    margin: 10px auto;
     padding: 10px;
-    margin: 10px 0;
     border-radius: 5px;
     border: none;
     font-size: 16px;
   }
   
   .login-box button {
-    width: 100%;
+    width: 90%; /* Adjusted to make the button fit better within the box */
     padding: 10px;
     background-color: #0066cc;
     color: white;
@@ -106,6 +142,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 20px; /* Added margin for spacing */
   }
   
   .login-box .forgot-password {
@@ -113,6 +150,12 @@
     margin: 10px 0;
     color: #66ccff;
     text-decoration: none;
+    
+  }
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
   }
   
   .login-box p {

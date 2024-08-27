@@ -23,8 +23,10 @@ const LoginPage = () => {
           <h2>WE-MEN-TOR</h2>
           <h3>LOGIN</h3>
           <form>
-            <input type="email" placeholder="Email:" />
-            <input type="password" placeholder="Password:" />
+            <label>Email:</label>
+            <input type="email" placeholder="foward@wemen.tor" />
+            <label>Password:</label>
+            <input type="password" placeholder="* * * * * *" />
             <a href="#forgot-password" className="forgot-password">Forgot Password?</a>
             <button type="submit">Sign In</button>
           </form>
