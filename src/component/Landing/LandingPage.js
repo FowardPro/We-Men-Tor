@@ -15,7 +15,7 @@ const LandingPage = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/aboutPage">About</Link></li>
           <li><Link to="/services">Services</Link></li>
-          <li><Link to="/login">Sign In</Link></li>
+          <li className='loginButton'><Link to="/login">Sign In</Link></li>
         </ul>
       </nav>
       <div className="mentor-logo-wrapper">
