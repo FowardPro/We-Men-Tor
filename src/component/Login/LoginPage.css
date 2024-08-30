@@ -56,12 +56,6 @@
     padding: 0;
   }
   
-  .navigation a {
-    color: #ffffff; /* Keep the links white for good contrast */
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px; /* Increase the font size for better visibility */
-}
 
 .navigation a:hover {
     color: #66ccff; /* Add a hover effect to make it clear that the links are clickable */
@@ -84,7 +78,18 @@
     color: #66ccff;
     text-decoration: none;
 }
+.login-box button {
+  width: 96%; /* Adjusted to make the button fit better within the box */
+  padding: 10px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px; /* Added margin for spacing */
 
+}
   
 .login-box {
     background-color: rgb(0, 20, 46); /* Dark background color for depth */
@@ -133,17 +138,7 @@
     font-size: 16px;
   }
   
-  .login-box button {
-    width: 90%; /* Adjusted to make the button fit better within the box */
-    padding: 10px;
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px; /* Added margin for spacing */
-  }
+
   
   .login-box .forgot-password {
     display: block;
@@ -152,11 +147,7 @@
     text-decoration: none;
     
   }
-  .navigation a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
+  
   
   .login-box p {
     margin-top: 20px;
@@ -166,4 +157,24 @@
     color: #66ccff;
     text-decoration: none;
   }
+  @keyframes blinkShadow {
+    0% { box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7), -1px 0px 5px rgba(253, 180, 180, 0.616); }
+    50% { box-shadow: none; }
+    100% { box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7), -1px 0px 15px rgba(216, 172, 172, 0.384); }
+  }
+  
+  .navigation a  {
+    width: 90%; /* Adjusted to make the button fit better within the box */
+    padding: 10px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Added margin for spacing */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7), 0px 5px rgba(255, 255, 255, 0.2); /* Initial shadow */
+    animation: blinkShadow 1s infinite; /* Added shadow blink animation */
+  }
+  
   

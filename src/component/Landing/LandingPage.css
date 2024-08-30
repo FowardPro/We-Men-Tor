@@ -21,9 +21,9 @@
   left: 20px;
   height: 80px;
   z-index: 3;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 
-              0px 6px 20px rgba(0, 0, 0, 0.2); /* Adds shadow to create a 3D effect */
-  transition: transform 0.3s ease-in-out;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 
+              0px 6px 20px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease-in-out; */
 }
 
 .tut-logo:hover {
@@ -53,6 +53,7 @@
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), 
               -3px -3px 8px rgba(255, 255, 255, 0.1); /* Inner and outer shadows for a more 3D effect */
   transition: all 0.3s ease;
+  margin-right: 30px;
 }
 
 .navigation ul li a:hover {
