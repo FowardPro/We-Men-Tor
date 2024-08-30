@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import logoTUT from '../../Assets/TUT_Logo_Transparent.png';
 import background from '../../Assets/Login Background.jpeg'; // Fixed naming convention issue
 import './LoginPage.css';
@@ -27,14 +29,25 @@ const LoginPage = () => {
       if (response.ok) {
         const data = await response.json();
         console.log('Login successful:', data);
-        navigate('/aboutPage');
+        toast.success('Login successful!', {
+          position: 'top-right', // Set toast position to top-right
+        });
+        setTimeout(() => {
+          navigate('/aboutPage');
+        }, 1500); // Delay navigation by 1.5 seconds to allow the toast to be visible
       } else {
         const errorData = await response.json();
         setError(errorData.error || 'Invalid email or password');
+        toast.error(errorData.error || 'Invalid email or password', {
+          position: 'top-right', // Set toast position to top-right
+        });
       }
     } catch (err) {
       console.error('Error during login:', err);
       setError('An unexpected error occurred. Please try again later.');
+      toast.error('An unexpected error occurred. Please try again later.', {
+        position: 'top-right', // Set toast position to top-right
+      });
     } finally {
       setLoading(false);
     }
@@ -73,15 +86,26 @@ const LoginPage = () => {
               placeholder="* * * * * *"
               required
             />
-            {error && <p className="error">{error}</p>}
+            {error && <p className="error-message">{error}</p>}
             <a href="#forgot-password" className="forgot-password">Forgot Password?</a>
             <button type="submit" disabled={loading}>
               {loading ? 'Logging in...' : 'Log In'}
             </button>
           </form>
-          <p>Don't have an account yet? <a href="#sign-up">Sign Up</a></p>
+          <p>Don't have an account yet? <a href="RegisterPage">Sign Up</a></p>
         </div>
       </div>
+      <ToastContainer 
+        position="top-right" // Set the default position for the ToastContainer
+        autoClose={5000} // Automatically close the toast after 5 seconds
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 };

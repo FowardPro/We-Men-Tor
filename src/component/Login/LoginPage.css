@@ -176,5 +176,17 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7), 0px 5px rgba(255, 255, 255, 0.2); /* Initial shadow */
     animation: blinkShadow 1s infinite; /* Added shadow blink animation */
   }
+  .error-message {
+    color: #ff4d4d; /* Red color for error */
+    background-color: #ffe6e6; /* Light red background */
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ff4d4d; /* Red border */
+  }
+  
   
   
